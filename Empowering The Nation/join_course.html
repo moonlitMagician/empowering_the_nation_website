@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Course</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Optional styles for highlighting the discount */
+        .highlight {
+            background-color: #ffeb3b; /* Yellow background */
+            border: 2px solid #fbc02d; /* Darker yellow border */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-image">
+        <img src="_images/Logo_edited.png" alt="Top Image" width="100%">
+    </div>
+
+    <div class="info-text">
+        <p>Join Course</p>
+    </div>
+
+    <div class="info-text" style="margin-top: 15%;">
+        <p>One Course = No Discount</p>
+        <p>Two Courses = 5% Discount</p>
+        <p>Three Courses = 10% Discount</p>
+        <p>More than three courses = 15% Discount</p>
+    </div>
+
+    <div class="info-text" style="margin-top: 15%;">
+        <form id="course-selection-form">
+            <label>
+                <input type="checkbox" name="course" value="First Aid">
+                First Aid = R1 500
+            </label><br>
+            <label>
+                <input type="checkbox" name="course" value="Sewing">
+                Sewing = R1 500
+            </label><br>
+            <label>
+                <input type="checkbox" name="course" value="Landscaping">
+                Landscaping = R1 500
+            </label><br>
+            <label>
+                <input type="checkbox" name="course" value="Life Skills">
+                Life Skills = R1 500
+            </label><br>
+            <label>
+                <input type="checkbox" name="course" value="Child Minding">
+                Child Minding = R750
+            </label><br>
+            <label>
+                <input type="checkbox" name="course" value="Cooking">
+                Cooking = R750
+            </label><br>
+            <label>
+                <input type="checkbox" name="course" value="Garden Maintenance">
+                Garden Maintenance = R750
+            </label>
+        </form>
+    </div>
+
+    <div class="info-text" id="discount-info" style="margin-top: 15%;">
+        <p>Discount Information: <span id="discount-amount">No Discount</span></p>
+    </div>
+
+    <div class="navi-menu">
+        <a href="checkout.html" class="button-link">Check Out</a>
+    </div>
+
+    <script>
+        const checkboxes = document.querySelectorAll('input[name="course"]');
+        const discountAmount = document.getElementById('discount-amount');
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updateDiscountHighlight);
+        });
+
+        function updateDiscountHighlight() {
+            const checkedCount = Array.from(checkboxes).filter(checkbox => checkbox.checked).length;
+
+            // Reset discount message
+            discountAmount.innerText = "No Discount";
+
+            if (checkedCount === 1) {
+                discountAmount.innerText = "No Discount";
+            } else if (checkedCount === 2) {
+                discountAmount.innerText = "5% Discount";
+            } else if (checkedCount === 3) {
+                discountAmount.innerText = "10% Discount";
+            } else if (checkedCount > 3) {
+                discountAmount.innerText = "15% Discount";
+            }
+        }
+    </script>
+
+</body>
+<footer>
+    <p>&copy; <span id="year"></span> Empowering The Nation. All rights reserved.</p>
+  </footer>
+  
+  //script to update the copywrite text dynamically based off the year
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</html>

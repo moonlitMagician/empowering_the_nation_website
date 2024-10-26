@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="top-image">
+        <img src="_images/Logo_edited.png" alt="Top Image" width="100%">
+    </div>
+    
+    <div class="input-container">
+        <input type="email" id="email" class="text-box" placeholder=" " required>
+        <label for="email" class="floating-label">Email</label>
+    </div>
+
+    <div class="input-container">
+        <input type="password" id="password" class="text-box" placeholder=" " required>
+        <label for="password" class="floating-label">Password</label>
+    </div>
+
+    <div class="navi-menu">
+        <a href="main_menu.html" class="button-link">Login</a>
+    </div>
+
+
+</body>
+<footer>
+    <p>&copy; <span id="year"></span> Empowering The Nation. All rights reserved.</p>
+  </footer>
+  
+  //script to update the copywrite text dynamically based off the year
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="top-image">
+        <img src="_images/Logo_edited.png" alt="Top Image" width="100%">
+    </div>
+
+    <div class="info-text">
+        <p>Contact Us</p>
+    </div>
+
+    <div class="info-text" style="margin-top: 15%;">
+        <p>support@empoweringthenation.co.za</p>
+        <p>+27 87 123 4567</p>
+    </div>
+
+</body>
+<footer>
+    <p>&copy; <span id="year"></span> Empowering The Nation. All rights reserved.</p>
+  </footer>
+  
+  //script to update the copywrite text dynamically based off the year
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</html>

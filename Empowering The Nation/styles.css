@@ -1,0 +1,110 @@
+.rounded-image {
+  border-radius: 500px;
+}
+
+.image-container {
+  margin-top: -55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-image {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+
+/* Styling for the box */
+.navi-menu {
+  background: linear-gradient(to bottom, #ffffff, #575353);
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center; /* Center the link inside the box */
+  width: calc(50% - 40px); /* Two buttons in a row, accounting for margins */
+  margin: 10px; /* Space around buttons */
+}
+
+/* Ensure the link is styled appropriately */
+.button-link {
+  color: #000000; /* Black text color */
+  text-decoration: none; /* Removes underline */
+  display: inline-block;
+  padding: 10px 20px; /* Padding inside the button */
+  font-size: 16px; /* Font size */
+  border-radius: 5px; /* Rounded edges */
+  width: 100%; /* Ensures the button fills the navi-menu width */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+body {
+  background: radial-gradient(circle, #ffffff, #062477); /* Background gradient */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* No margin */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: flex-start; /* Align to the top */
+}
+
+.input-container {
+  position: relative; /* Positioning context for the label */
+  margin-bottom: 20px; /* Space below the input */
+  width: 300px; /* Set a fixed width for the input box */
+}
+
+.text-box {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside the box */
+  background: linear-gradient(to bottom, #beb7b7, #575353);
+  border-radius: 5px; /* Rounded edges */
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.text-box:focus {
+  border-color: #007BFF; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Style for the submit button to match the text boxes */
+input[type="submit"] {
+  background-color: #007BFF; /* Button background color */
+  color: #ffffff; /* Button text color */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
+
+.button-container {
+  display: flex; /* Use flexbox to arrange buttons in a row */
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  justify-content: center; /* Center the buttons horizontally */
+  margin: 20px 0; /* Space above and below the button container */
+}
+
+.info-text {
+  background: linear-gradient(to bottom, #ffffff, #575353); /* Same background as buttons */
+  padding: 20px; /* Space inside the text block */
+  border: 1px solid #ddd; /* Border to match the buttons */
+  border-radius: 10px; /* Rounded edges */
+  width: calc(100% - 40px); /* Width for the text block */
+  margin-top: 10px; /* Space below the image */
+  box-sizing: border-box; /* Include padding in width */
+  color: #000000; /* Black text color */
+  font-size: 16px; /* Font size */
+  text-align: center; /* Center the text */
+}
+
+.header-container {
+  text-align: center; /* Center the content inside the header */
+}
+
+.top-image {
+  width: 100%; /* Full width */
+  position: relative; /* Maintain relative position for the image */
+}

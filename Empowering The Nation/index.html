@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering The Nation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-image">
+        <img src="_images/Logo.png" alt="Centered Image" class="rounded-image" width="40%">
+    </div>
+    
+    <!-- Navigation Menu -->
+    <div class="button-container">
+        <div class="navi-menu">
+            <a href="sign_up.html" class="button-link">Sign-Up</a>
+        </div>
+        <div class="navi-menu">
+            <a href="login.html" class="button-link">Log-in</a>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <p>&copy; <span id="year"></span> Empowering The Nation. All rights reserved.</p>
+  </footer>
+  
+  //script to update the copywrite text dynamically based off the year
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</html>

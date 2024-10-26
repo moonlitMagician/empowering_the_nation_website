@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Week Course</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="top-image">
+        <img src="_images/Logo_edited.png" alt="Top Image" width="100%">
+    </div>
+
+    <div class="info-text">
+        <p>6 Week Courses</p>
+    </div>
+
+    <div class="button-container">
+        <div class="navi-menu">
+            <a href="child_minding.html" class="button-link">Child Minding</a>
+        </div>
+        <div class="navi-menu">
+            <a href="cooking.html" class="button-link">Cooking</a>
+        </div>
+        <div class="navi-menu">
+            <a href="garden_maintenance.html" class="button-link">Garden Maintenance</a>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <p>&copy; <span id="year"></span> Empowering The Nation. All rights reserved.</p>
+  </footer>
+  
+  //script to update the copywrite text dynamically based off the year
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</html>
